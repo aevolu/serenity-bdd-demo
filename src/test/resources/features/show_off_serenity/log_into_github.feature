@@ -7,6 +7,6 @@ Feature: To show off serenity bdd
   I want to log into Github
 
   Scenario: Show repositories
-    Given that Aki has created a repository 'codefreeze.fi'
+    Given that aevolu has created a repository 'codefreeze.fi'
      When he lists all the repositories
      Then codefreeze.fi repository is shown in the repository lists

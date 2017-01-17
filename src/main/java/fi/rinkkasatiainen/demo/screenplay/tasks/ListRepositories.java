@@ -11,8 +11,9 @@ import static net.serenitybdd.screenplay.Tasks.instrumented;
 public class ListRepositories implements Task {
 
     public <T extends Actor> void performAs(T theActor) {
-            theActor.attemptsTo(
-                    new ClickOnBy( By.xpath( "//a[@href='/rinkkasatiainen?tab=repositories']"))
+        String actorNAme = theActor.getName();
+        theActor.attemptsTo(
+                    new ClickOnBy( By.xpath("//a[@href='/" + actorNAme + "?tab=repositories']"))
             );
     }
 

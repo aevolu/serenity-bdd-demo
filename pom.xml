@@ -61,9 +61,8 @@
    </dependency>
    <dependency>
      <groupId>org.hamcrest</groupId>
-     <artifactId>hamcrest-core</artifactId>
+     <artifactId>hamcrest-all</artifactId>
      <version></version>
-     <scope>test</scope>
    </dependency>
    <dependency>
      <groupId>org.assertj</groupId>
