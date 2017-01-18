@@ -1,0 +1,9 @@
+h1. How to run
+The current Test-Setup won't run on Windows 10 with Firefox 50.1.0 
+
+h2. Find an "old" Firefox (e.g. FirefoxPortable_47.0.1 - https://sourceforge.net/projects/portableapps/files/Mozilla%20Firefox%2C%20Portable%20Ed./Mozilla%20Firefox%2C%20Portable%20Edition%2047.0.1/ )
+unzip it into FF_INSTALL_FOLDER
+
+h2. Start the Main-Class
+Main-Class : fi.rinkkasatiainen.demo.cucumber.Current
+and add the following vm arg: -Dwebdriver.firefox.bin="FF_INSTALL_FOLDER\firefox.exe"
