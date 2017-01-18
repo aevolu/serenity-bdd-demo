@@ -1,9 +1,10 @@
-h1. How to run
-The current Test-Setup won't run on Windows 10 with Firefox 50.1.0 
++How to run
+The Test-Setup won't run on Windows 10 / Firefox 50.1.0 without configuration
 
-h2. Find an "old" Firefox (e.g. FirefoxPortable_47.0.1 - https://sourceforge.net/projects/portableapps/files/Mozilla%20Firefox%2C%20Portable%20Ed./Mozilla%20Firefox%2C%20Portable%20Edition%2047.0.1/ )
-unzip it into FF_INSTALL_FOLDER
+h2. geckodriver installation
+goto https://github.com/mozilla/geckodriver/releases (some details https://github.com/mozilla/geckodriver/#supported-firefoxen) and download the geckodriver
 
 h2. Start the Main-Class
 Main-Class : fi.rinkkasatiainen.demo.cucumber.Current
-and add the following vm arg: -Dwebdriver.firefox.bin="FF_INSTALL_FOLDER\firefox.exe"
+and add the following vm arg: -Dwebdriver.gecko.driver="PATH_TO_GECKODRIVER\geckodriver.exe"
+
